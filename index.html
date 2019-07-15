@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
 </head>
 
@@ -26,12 +27,13 @@
       New Grid-Size:
     </a>
     <input id="currValue" type="text" name="currValue" class="input">
-    <button onclick="add()" class="button">+</button>
-    <button onclick="generate()" class="button">-</button>
-    <button onclick="generate()" class="button">*</button>
-    <button onclick="generate()" class="button">/</button>
+    <button onclick="storeVal('add')" class="button">+</button>
+    <button onclick="storeVal('sub')" class="button">-</button>
+    <button onclick="storeVal('mul')" class="button">*</button>
+    <button onclick="storeVal('div')" class="button">/</button>
+    <button onclick="calculate()" class="button">=</button>
   </div>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
