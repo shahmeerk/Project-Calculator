@@ -4,7 +4,7 @@ var operation = "";
 
 function storeVal(operater){
     let displayOut = document.querySelector('#currValue');
-    firstVal = parseInt(displayOut.value);
+    firstVal = parseFloat(displayOut.value);
     operation = operater;
     displayOut.value  = "";
 }
@@ -27,7 +27,7 @@ function divi(val1, val2){
 
 function calculate(){
     let displayOut = document.querySelector('#currValue');
-    secondVal = parseInt(displayOut.value);
+    secondVal = parseFloat(displayOut.value);
 
     if (operation == "add"){
         displayOut.value = add(firstVal, secondVal);
@@ -41,4 +41,20 @@ function calculate(){
     if (operation == "mul"){
         displayOut.value = mult(firstVal, secondVal);
     }
+}
+
+function putOnDisplay(digit){
+    let displayOut = document.querySelector('#currValue');
+    var pressedDigit = parseFloat(digit);
+    displayOut.value = displayOut.value + pressedDigit;
+}
+
+function putPoint(){
+    let displayOut = document.querySelector('#currValue');
+    displayOut.value = displayOut.value + ".";
+}
+
+function clear(){
+    let displayOut = document.querySelector('#currValue');
+    displayOut.value = "";
 }

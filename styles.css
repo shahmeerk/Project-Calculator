@@ -4,8 +4,22 @@
 .mainContainer{
     width: 100%;
 }
-.containerGrid{
+
+.calculator{
     margin: 0 auto;
+    width: 304px;
+    border: solid;
+}
+
+.currValue{
+    width: 300px;
+    box-sizing: border-box;
+    margin: 2px;
+    border: solid;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 36px;
+    text-align: left;
 }
 .heading1{
     font-family: 'Squada One', cursive;
@@ -29,8 +43,11 @@
 .button{
     font-family: 'Squada One', cursive;
     font-size: 14px;
+    width: 24%;
+    height: 50px;
+    margin-block: 4px;
     text-align: center;
-    display: inline;
+    box-sizing: border-box;
 }
 
 .bar{
